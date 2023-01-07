@@ -18,3 +18,14 @@ slides.forEach(function (slide, index) {
 //          left: 100%;
 //      }
 // </style>
+
+let counter = 0;
+nextBtn.addEventListener('click', function () {
+  counter++;
+  carousel();
+});
+
+prevBtn.addEventListener('click', function () {
+  counter--;
+  carousel();
+});
