@@ -31,8 +31,7 @@ prevBtn.addEventListener('click', function () {
 });
 
 function carousel() {
-    slides.forEach(function (slide) {
-      slide.style.transform = `translateX(-${counter * 100}%)`;
-    });
-  }
-  
+  slides.forEach(function (slide) {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+}
