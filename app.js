@@ -1,11 +1,11 @@
 // Get the DOM elements
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".nextBtn");
-const prevBtn = document.querySelector(".prevBtn");
+const slides = document.querySelectorAll('.slide');
+const nextBtn = document.querySelector('.nextBtn');
+const prevBtn = document.querySelector('.prevBtn');
 
 // To determine the left %
 slides.forEach(function (slide, index) {
-    slide.style.left = `${index * 100}%`;
+  slide.style.left = `${index * 100}%`;
 });
 
 // 1st item, index = 0, 0 * 100 = 0%
@@ -14,7 +14,7 @@ slides.forEach(function (slide, index) {
 // 4th item, index = 3, 3 * 100 = 300%
 
 // <style>
-//      slide { 
+//      slide {
 //          left: 100%;
 //      }
 // </style>
