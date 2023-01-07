@@ -31,7 +31,23 @@ prevBtn.addEventListener('click', function () {
 });
 
 function carousel() {
+  if (counter < slides.length - 1) {
+    // nextBtn.style.display = 'block';
+    nextBtn.disabled=false;
+  } else {
+    // nextBtn.style.display = 'none';
+    nextBtn.disabled=true;
+  }
+
+  if (counter > 0) {
+    prevBtn.style.display = "block";
+  } else {
+    prevBtn.style.display = "none";
+  }
+
   slides.forEach(function (slide) {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
+
+prevBtn.style.display = "none";
