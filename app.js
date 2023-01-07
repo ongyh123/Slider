@@ -29,3 +29,10 @@ prevBtn.addEventListener('click', function () {
   counter--;
   carousel();
 });
+
+function carousel() {
+    slides.forEach(function (slide) {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
+  
